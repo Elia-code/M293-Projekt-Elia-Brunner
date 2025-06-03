@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Über Mich</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <button id="open-sidebar-button" onclick="openSidebar()" aria-label="open sidebar" aria-expanded="false" aria-controls="navbar">
+      <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#c9c9c9">
+        <path d="M165.13-254.62q-10.68 0-17.9-7.26-7.23-7.26-7.23-18t7.23-17.86q7.22-7.13 17.9-7.13h629.74q10.68 0 17.9 7.26 7.23 7.26 7.23 18t-7.23 17.87q-7.22 7.12-17.9 7.12H165.13Zm0-200.25q-10.68 0-17.9-7.27-7.23-7.26-7.23-17.99 0-10.74 7.23-17.87 7.22-7.13 17.9-7.13h629.74q10.68 0 17.9 7.27 7.23 7.26 7.23 17.99 0 10.74-7.23 17.87-7.22 7.13-17.9 7.13H165.13Zm0-200.26q-10.68 0-17.9-7.26-7.23-7.26-7.23-18t7.23-17.87q7.22-7.12 17.9-7.12h629.74q10.68 0 17.9 7.26 7.23 7.26 7.23 18t-7.23 17.86q-7.22 7.13-17.9 7.13H165.13Z"/>
+      </svg>
+    </button>
+
+    <nav id="navbar">
+      <ul>
+        <li>
+          <button id="close-sidebar-button" onclick="closeSidebar()" aria-label="close sidebar">
+            <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#c9c9c9">
+              <path d="m480-444.62-209.69 209.7q-7.23 7.23-17.5 7.42-10.27.19-17.89-7.42-7.61-7.62-7.61-17.7 0-10.07 7.61-17.69L444.62-480l-209.7-209.69q-7.23-7.23-7.42-17.5-.19-10.27 7.42-17.89 7.62-7.61 17.7-7.61 10.07 0 17.69 7.61L480-515.38l209.69-209.7q7.23-7.23 17.5-7.42 10.27-.19 17.89 7.42 7.61 7.62 7.61 17.7 0 10.07-7.61 17.69L515.38-480l209.7 209.69q7.23 7.23 7.42 17.5.19 10.27-7.42 17.89-7.62 7.61-17.7 7.61-10.07 0-17.69-7.61L480-444.62Z"/>
+            </svg>
+          </button>
+        </li>
+        <li class="home-li"><a href="index.html">Home</a></li>
+        <li><a class="active-link" aria-current="page" href="./aboutMe.html">Über mich</a></li>
+        <li><a href="./abilities.html">Fähigkeiten</a></li>
+        <li><a href="./portfolio.html">Portfolio</a></li>
+        <li><a href="./contact.html">Kontakt</a></li>
+      </ul>
+    </nav>
+    
+    <div id="overlay" onclick="closeSidebar()" aria-hidden="true"></div>
+
+    <main>
+      <div class="bio-container">
+        <img src="./media/BildVonMir.webp" alt="Portrait" class="bio-image" />
+        <div class="bio-text">
+          <h1 class="text-decoration">Biografie</h1>
+          <p>In meiner Jugend lebte ich nicht immer in der Schweiz.
+            Im Alter von 8 Jahren sind meine beiden Schwestern,
+            meine Mutter und ich nach Mexiko umgezogen.
+            Dort habe ich meine Kenntnisse in den Sprachen Spanisch und Englisch ausgebaut.
+            Nach unserer Rückkehr in die Schweiz bin ich in die zweite Oberstufe eingetreten 
+            und habe dem regulären Schulrhythmus gefolgt.
+            Ich habe nach der Sekundarschule eine Lehre begonnen.
+            Ich habe mich entschieden, die Berufsmatura während der Lehre zu machen.
+          </p>
+          <br>
+          <h1 class="text-decoration">Hobbys & Freizeit</h1>
+          <p>Meine Hobbys umfassen das Trainieren im Fitnessstudio mit Freunden, 
+            das Erlernen von Spielentwicklung sowie das Gamen von Videospielen. 
+            Besonders die kreative Arbeit beim Entwickeln eigener kleiner Spiele reizt mich, 
+            da ich dabei nicht nur programmieren, sondern auch logisches Denken und gestalterische Ideen einbringen kann. <br><br>
+            Ich habe außerdem eine Zeit lang Fussball gespielt, was mir Teamgeist und sportlichen Ehrgeiz vermittelt hat. 
+            Nach meiner Rückkehr in die Schweiz habe ich zwar aufgehört aktiv zu spielen, 
+            verfolge den Sport aber weiterhin mit großem Interesse. <br>
+            In meiner Freizeit beschäftige ich mich zudem gerne mit neuer Technologie, 
+            sei es durch das Testen neuer Softwares oder das Verfolgen aktueller Entwicklungen im Bereich Gaming und IT.
+          </p>
+          <br>
+        </div>
+        <video width="320" height="240" autoplay muted loop class="bio-image">
+          <source src="./media/Trampolin-Video.mp4" type="video/mp4">
+        </video>
+        <div>
+          <h2 class="text-decoration">Trampolinpark</h2>
+          <p>Ich gehe auch ab und zu mit meinen Kollegen in den Trampolinpark, um gemeinsam eine schöne Zeit zu verbringen,
+            uns sportlich zu betätigen und den Arbeitsalltag für einen Moment hinter uns zu lassen. Dabei haben wir nicht nur viel Spaß,
+            sondern stärken auch unseren Teamgeist und lernen uns außerhalb des Berufsalltags besser kennen. Wie man hier im Video auf der linken Seite gut erkennen kann,
+            probieren wir verschiedene Sprünge aus und lachen viel dabei. Solche Ausflüge sorgen immer für gute Stimmung und bleiben uns lange in Erinnerung.
+          </p>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-divider">
+        <p>© 2025 <a href="./aboutMe.html" class="footer-link">Elia Brunner</a> alle Rechte vorbehalten</p>
+      </div>
+      <div class="footer-divider">
+        <p>Kontakt: eliabrunner8@gmail.com +41 79 523 55 01</p>
+      </div>
+      <div class="footer-divider">
+        <p>Rechtliches: Impressum | Datenschutzerklärung</p>
+      </div>
+    </footer>
+    
+  </body>
+</html>
